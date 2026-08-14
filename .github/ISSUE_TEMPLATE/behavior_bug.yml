@@ -1,0 +1,37 @@
+name: Report an unsafe or unhelpful response
+description: Report behavior that is cold, patronizing, manipulative, unsafe, or contrary to a skill.
+title: "[Behavior] "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      options:
+        - sleep-with-me
+        - dont-text-them
+        - stop-the-spiral
+        - repository or packaging
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Minimal prompt
+      description: Remove names, private messages, and identifying details.
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Problematic behavior
+      description: Describe the smallest relevant excerpt or pattern. Do not post sensitive data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Safer or more useful behavior
+    validations:
+      required: true
