@@ -1,0 +1,35 @@
+name: Propose a human skill
+description: Suggest a narrow human situation that needs a better agent protocol.
+title: "[Skill proposal] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: moment
+    attributes:
+      label: Human moment
+      description: What recognizable situation should this skill handle?
+      placeholder: A user is...
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: What ordinary AI responses get wrong
+      description: Give a short, non-identifying example.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired stopping point
+      description: What should the user leave the interaction with?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Safety or misuse risks
+      description: Consider diagnosis, dependency, manipulation, harassment, and crisis handling.
+    validations:
+      required: true
