@@ -1,0 +1,23 @@
+{
+  "name": "human-skills",
+  "owner": {
+    "name": "sparkfang-hub"
+  },
+  "metadata": {
+    "description": "Boundary-aware Agent Skills for sleep, emotional clarity, and difficult communication.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "human-skills",
+      "description": "Three small human-moment skills: sleep-with-me, dont-text-them, and stop-the-spiral.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/sleep-with-me",
+        "./skills/dont-text-them",
+        "./skills/stop-the-spiral"
+      ]
+    }
+  ]
+}
