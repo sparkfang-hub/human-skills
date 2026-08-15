@@ -21,6 +21,15 @@ class RepositoryTests(unittest.TestCase):
         for name in EXPECTED_SKILLS:
             self.assertIn(name, text)
 
+    def test_evaluation_cases_cover_non_relationship_domains(self):
+        path = ROOT / "docs" / "evaluation-cases.md"
+        self.assertTrue(path.is_file())
+        text = path.read_text(encoding="utf-8").lower()
+        for domain in ("work", "money", "health", "parenting", "customer"):
+            self.assertIn(domain, text)
+        for skill in EXPECTED_SKILLS:
+            self.assertIn(skill, text)
+
     def test_marketplace_paths_exist(self):
         data = json.loads(
             (ROOT / ".claude-plugin" / "marketplace.json").read_text(encoding="utf-8")

@@ -108,7 +108,15 @@ I am angry and about to send this message. Help me decide whether it should be s
 ```
 
 ```text
-She has not replied for five hours and my brain is inventing reasons. Separate facts from guesses.
+My manager barely spoke to me in the meeting and my brain has decided they think I am incompetent. Separate facts from guesses.
+```
+
+```text
+I had one expensive month and now I keep imagining financial disaster. Help me separate what I know from what I am predicting.
+```
+
+```text
+My ankle feels strange after training and I keep jumping straight to permanent damage. Help me separate the symptom from the story without dismissing a real injury.
 ```
 
 Skills can activate automatically from their descriptions, or you can ask the agent to use one by name.
@@ -133,13 +141,13 @@ Human Skills will not:
 - give medication instructions, prescribe sleep schedules, or promise that a technique will make someone sleep;
 - encourage secrecy, exclusivity, dependency, or replacing human relationships with an AI.
 
-Read the [design principles](docs/design-principles.md) and [safety model](docs/safety-model.md) for the full standard.
+Read the [design principles](docs/design-principles.md), [safety model](docs/safety-model.md), and [seed evaluation cases](docs/evaluation-cases.md) for the current standard and regression coverage.
 
 ## Evidence and scope
 
 The sleep skill uses conservative ideas consistent with public guidance from sleep-medicine and health organizations: do not force sleep, reduce stimulation, and leave the bed for a quiet activity if wakefulness has become frustrating. It deliberately does not implement a personalized sleep-restriction program or medical treatment. See the skill's [evidence and boundaries](skills/sleep-with-me/references/evidence-and-boundaries.md).
 
-The relationship and rumination skills are non-clinical interaction protocols. They introduce time, separate observation from inference, and reduce coercive or impulsive communication. They do not diagnose attachment styles, anxiety disorders, OCD, trauma, or any other condition.
+The communication and rumination skills are non-clinical interaction protocols. They introduce time, separate observation from inference, and reduce coercive or impulsive communication. They do not diagnose attachment styles, anxiety disorders, OCD, trauma, or any other condition.
 
 ## Development
 
